@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/nightcity"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/checkAcepta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aceptar el contenido hecho"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/Stars"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <RadioButton
+        android:id="@+id/rbMayor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Mayor de Edad"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/tvDato"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <RadioButton
+        android:id="@+id/rbMenor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menor de Edad"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/rbMayor"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintTop_toBottomOf="@+id/btAceptar"
+        tools:layout_editor_absoluteX="347dp" />
+
+    <RatingBar
+        android:id="@+id/Stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/rbMenor"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <TextView
+        android:id="@+id/tvDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirme su dato personal"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/btAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="#3F3F3F"
+        android:text="ACEPTAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/checkAcepta"
+        tools:layout_editor_absoluteX="161dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

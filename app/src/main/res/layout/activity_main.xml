@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4F4F4F"
+            android:baselineAligned="true"
+            android:gravity="center"
+            android:stretchColumns="3">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Nombre"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:padding="3dip"
+                    android:text="Patricio"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Apellido"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:padding="3dip"
+                    android:text="Soto"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Edad"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:padding="3dip"
+                    android:text="20"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="RUT"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:padding="3dip"
+                    android:text="20.267.667-7"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="650dp">
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#4F4F4F"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:text="Aceptar" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
